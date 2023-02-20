@@ -1,0 +1,36 @@
+body {
+  background-color: transparent;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main {
+  width: 80%;
+  background-color: #36ae7c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2),
+    12px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid white 5px;
+}
+
+div {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(81, 146, 89, 0.4);
+  text-align: center;
+}
