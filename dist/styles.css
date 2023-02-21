@@ -1,10 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
 
 body {
-  background-color: transparent;
+  background-image: url('images/stadium.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.pitch {
+  background-color: #36ae7c;
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  position: relative;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2),
+    12px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid white 5px;
+}
+.pitch:after {
+  content: "";
+  border-left: 1px solid white;
+  position: absolute;
+  top: 20px;
+  left: 400px;
+  display: block;
+  height: 461px;
+}
+
+.pitch:before {
+  content: "";
+  border: 1px solid white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: block;
+  width: 760px;
+  height: 460px;
+  z-index: 0;
+}
+
+.center-circle {
+  position: absolute;
+  top: 200px;
+  left: 355px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 50%;
+  z-index: 0;
+}
+.center-circle:after {
+  position: absolute;
+  top: 43px;
+  left: 43px;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  content: "";
+  border: 1px solid white;
+  z-index: 0;
+}
+
+.penalty-area {
+  position: absolute;
+  height: 140px;
+  width: 80px;
+  top: 175px;
+  border: 1px solid white;
+  z-index: 0;
+}
+
+.left .penalty-area {
+  left: 20px;
+  border-left: 0;
+}
+
+.right .penalty-area {
+  right: 19px;
+  border-right: 0;
+}
+
+.penalty-area:before {
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 35px;
+  border: 1px solid white;
+  content: "";
+}
+.left .penalty-area:before {
+  left: 0px;
+  border-left: 0;
+}
+.right .penalty-area:before {
+  right: 0px;
+  border-right: 0;
+}
+
+.penalty-area:after {
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  top: 70px;
+  background-color: white;
+  content: "";
+}
+.left .penalty-area:after {
+  right: 15px;
+}
+.right .penalty-area:after {
+  left: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-players {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
 }
 
 ul,
@@ -16,36 +135,20 @@ li {
 }
 
 ul img {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   cursor: pointer;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 1rem 2.5rem 1rem;
+  z-index: 100;
 }
 
-main {
-  width: 80%;
-  background-color: #36ae7c;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
-  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2),
-    12px 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: solid white 5px;
-}
-
-main div {
-  width: 170px;
+.main-players div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgb(81, 146, 89, 0.4);
+  background-color: rgba(28, 103, 88, 0.2);
   text-align: center;
-}
-
-.hidden {
-  display: none;
 }
 
 #backdrop {
@@ -104,14 +207,13 @@ main div {
   margin: 2rem;
 }
 
-
 .information {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.information p{
+.information p {
   padding: 0 1rem 0 1rem;
 }
 
@@ -134,7 +236,7 @@ main div {
 }
 
 .overall b {
-color: red;
+  color: red;
 }
 
 .playerName {
@@ -142,11 +244,9 @@ color: red;
   margin: 1rem;
 }
 
-.modal{
+.modal {
   border: black solid 2px;
-  background-image: linear-gradient(to right, #e9e9e9, #b6b6b6, #848484);
 }
-
 
 hr {
   color: black;
@@ -154,6 +254,57 @@ hr {
 }
 
 p a {
-  color: purple;
+  color: rgb(0, 60, 128);
   text-decoration: none;
+}
+header {
+  margin: 1rem;
+  background-color: rgba(238, 242, 230, 0.85);
+  padding: 1rem;
+}
+
+header h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+header h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+
+.two h1 {
+  text-transform: capitalize;
+}
+.two h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 2px;
+  content: "";
+  background-color: #c50000;
+}
+
+.two h1 span {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 3em;
+  padding-left: 0.25em;
+  color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px;
+}
+
+.alt-two h1:before {
+  left: 50%;
+  margin-left: -30px;
 }
