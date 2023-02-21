@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+
 body {
   background-color: transparent;
   text-align: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 ul,
@@ -31,8 +35,8 @@ main {
   border: solid white 5px;
 }
 
-div {
-  width: 200px;
+main div {
+  width: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -59,4 +63,97 @@ div {
 #backdrop.visible {
   display: block;
   pointer-events: all;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  top: 15vh;
+  width: 50%;
+  left: 25%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+.modal.visible {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+@keyframes fade-slide-in {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modal img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+
+.information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.information p{
+  padding: 0 1rem 0 1rem;
+}
+
+.stats {
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.overall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.overall p {
+  margin: 0.25rem;
+}
+
+.overall b {
+color: red;
+}
+
+.playerName {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.modal{
+  border: black solid 2px;
+  background-image: linear-gradient(to right, #e9e9e9, #b6b6b6, #848484);
+}
+
+
+hr {
+  color: black;
+  border: black solid 1px;
+}
+
+p a {
+  color: purple;
+  text-decoration: none;
 }
