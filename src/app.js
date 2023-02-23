@@ -50,15 +50,16 @@ const modalCreation = (
 
 const playerCard = (i) => {
   let stats;
+  console.log(playerImg[i].parentElement.parentElement.children)
   const playerName =
-    playerImg[i].parentElement.parentElement.children[0].textContent;
+    playerImg[i].parentElement.parentElement.children[1].textContent;
   const playerImage = playerImg[i].outerHTML;
   const nation =
-    playerImg[i].parentElement.parentElement.children[1].textContent;
-  const age = playerImg[i].parentElement.parentElement.children[2].textContent;
-  const email = playerImg[i].parentElement.parentElement.children[3].innerHTML;
+    playerImg[i].parentElement.parentElement.children[2].textContent;
+  const age = playerImg[i].parentElement.parentElement.children[3].textContent;
+  const email = playerImg[i].parentElement.parentElement.children[4].innerHTML;
   const position =
-    playerImg[i].parentElement.parentElement.children[4].textContent;
+    playerImg[i].parentElement.parentElement.children[5].textContent;
 
   const stat1 =
     playerImg[i].parentElement.parentElement.children[6].textContent;
