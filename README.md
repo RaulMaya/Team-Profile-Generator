@@ -2,11 +2,6 @@
 
 Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
 
-<div style="position:relative;width:fit-content;height:fit-content;">
-            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/zv51AufUdjY?utm_source=embed&utm_medium=embed&utm_campaign=watch">
-                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
-            </a>
-</div>
 https://www.youtube.com/watch?v=1oDECQxuNHI
 
 <!-- PROJECT LOGO -->
@@ -22,6 +17,12 @@ https://www.youtube.com/watch?v=1oDECQxuNHI
 ---
 
 ![node.js](https://img.shields.io/badge/node.js-v16.15.1-green.svg)
+
+<div style="position:relative;width:fit-content;height:fit-content;">
+            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/zv51AufUdjY?utm_source=embed&utm_medium=embed&utm_campaign=watch">
+                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
+            </a>
+</div>
 
             <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/zv51AufUdjY/embed" width="640" height="360"></iframe>
 
@@ -53,14 +54,15 @@ https://www.youtube.com/watch?v=1oDECQxuNHI
 ![quickSnipet](assets/images/quickSnippet.gif)
 
 ### Setup
+
 Clone this repo to your desktop and run `npm install` to install all the dependencies.
 
-Check to be in the folders terminal, an then on the terminal run `node index.js`. 
-
+Check to be in the folders terminal, an then on the terminal run `node index.js`.
 
 ### License
->You can check out the full license [here](https://github.com/IgorAntun/node-chat/blob/master/LICENSE)
-This project is licensed under the terms of the **MIT** license.
+
+> You can check out the full license [here](https://github.com/IgorAntun/node-chat/blob/master/LICENSE)
+> This project is licensed under the terms of the **MIT** license.
 
 ### Contact :iphone:
 
