@@ -6,7 +6,6 @@ Node.js command-line application that takes in information about employees on a 
             <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/zv51AufUdjY?utm_source=embed&utm_medium=embed&utm_campaign=watch">
                 <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
             </a>
-            <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/zv51AufUdjY/embed" width="640" height="360"></iframe>
 </div>
 https://www.youtube.com/watch?v=1oDECQxuNHI
 
@@ -20,17 +19,14 @@ https://www.youtube.com/watch?v=1oDECQxuNHI
   <h2 align="center">Football 7: Team Generator</h2>
   <h4 align="center">Node.JS & Object Oriented Programming Project</h4>
 
-============
-
 ---
 
-[![GitHub Stars](https://img.shields.io/github/stars/IgorAntun/node-chat.svg)](https://github.com/IgorAntun/node-chat/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/IgorAntun/node-chat.svg)](https://github.com/IgorAntun/node-chat/issues) [![Current Version](https://img.shields.io/badge/version-1.0.7-green.svg)](https://github.com/IgorAntun/node-chat) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://igorantun.com/chat) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/IgorAntun/node-chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![node.js](https://img.shields.io/badge/node.js-v16.15.1-green.svg)
 
-This is a node.js chat application powered by SockJS and Express that provides the main functions you'd expect from a chat, such as emojis, private messages, an admin system, etc.
+            <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/zv51AufUdjY/embed" width="640" height="360"></iframe>
 
-![Chat Preview](http://i.imgur.com/lgRe8z4.png)
   <p align="center">
-  This project consists in a building a weather dashboard using server side APIs to populate the information in the application, it also uses JavaScript and CSS to provide a polish user interface and user experience.
+  This project consists in a building a team generator, powered by Node.js, using Inquirer.js, the app will start with "node index.js" and ask the user some questions about the team. When the user answers and fills in the seven players, an interactive soccer field will be displayed, with the players in their position.
     <br />
     <br />
     <a href="https://github.com/RaulMaya/Weather-Dashboard">Repository</a>    
@@ -56,9 +52,15 @@ This is a node.js chat application powered by SockJS and Express that provides t
 
 ![quickSnipet](assets/images/quickSnippet.gif)
 
-<p>The dashboard has error handlers and user proof mistakes so it can handle them in a smooth way, to improve user experience, for instance if the user leaves a blank in the input form and submit it, the application will return with a friendly message, explaining which was the problem, this will trigger also if the user types a nonexistent city</p>
+### Setup
+Clone this repo to your desktop and run `npm install` to install all the dependencies.
 
-![errors](assets/images/errors.gif)
+Check to be in the folders terminal, an then on the terminal run `node index.js`. 
+
+
+### License
+>You can check out the full license [here](https://github.com/IgorAntun/node-chat/blob/master/LICENSE)
+This project is licensed under the terms of the **MIT** license.
 
 ### Contact :iphone:
 
