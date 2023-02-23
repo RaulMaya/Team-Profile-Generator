@@ -1,9 +1,3 @@
-# Team-Profile-Generator
-
-Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
-
-https://www.youtube.com/watch?v=1oDECQxuNHI
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -16,6 +10,8 @@ https://www.youtube.com/watch?v=1oDECQxuNHI
 
 ---
 
+<p align="left">
+
 ![node.js](https://img.shields.io/badge/node.js-v16.15.1-green.svg)
 
 <div style="position:relative;width:fit-content;height:fit-content;">
@@ -24,15 +20,17 @@ https://www.youtube.com/watch?v=1oDECQxuNHI
             </a>
 </div>
 
-            <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/zv51AufUdjY/embed" width="640" height="360"></iframe>
+<a href="https://www.youtube.com/channel/UCQ6WTDZwIum9Gl09bBjznEQ?sub_confirmation=1"><img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+
+</p>
 
   <p align="center">
   This project consists in a building a team generator, powered by Node.js, using Inquirer.js, the app will start with "node index.js" and ask the user some questions about the team. When the user answers and fills in the seven players, an interactive soccer field will be displayed, with the players in their position.
     <br />
     <br />
-    <a href="https://github.com/RaulMaya/Weather-Dashboard">Repository</a>    
+    <a href="https://github.com/RaulMaya/Team-Profile-Generator">Repository</a>    
     ·
-    <a href="https://raulmaya.github.io/Football-Quiz/">Deployment</a>
+    <a href="https://raulmaya.github.io/Team-Profile-Generator/dist/">Deployment</a>
     ·
     <a href="https://www.linkedin.com/in/raul-maya/">My LinkedIn</a>
 
@@ -41,17 +39,23 @@ https://www.youtube.com/watch?v=1oDECQxuNHI
 
 <!-- ABOUT THE PROJECT -->
 
-![mainMenu](assets/images/mainDashboard.jpg)
+![mainMenu](readme/generated.jpg)
 
 ### About The Project
 
 <br>
-<p>This project was created using tools such as JavaScript, Server-Side APIs <a href="https://openweathermap.org/">Open Weather API</a> and Browser tools. The main menu of the dashboard will display some important and big cities around the world so you can try them as possible options to display the weather. Also, the user can open the search box at the right of the dashboard title, so it can type whatever city the user wants to look at.
-</p>
-<p>At the bottom of the dashboard, it will be displayed a 5 days weather forecast for the city the user selected or input. Also, at the right of the dashboard it will be displayed the current weather and additional information of the selected city.
+<p>This project was created using tools such as JavaScript, Node.JS, Inquirer.JS, and Jest.JS, this last one for unit testing. Once the application start, the terminal will ask the user some questions about the team, and the user will answer them according to the team he want to fill. Once the user answer all the questions of the terminal, the application will generate an index file with the field as a background with all the players set according to their position.
 </p>
 
-![quickSnipet](assets/images/quickSnippet.gif)
+### Video
+
+ <video width="600" height="440" controls>
+  <source src="https://www.youtube.com/watch?v=1oDECQxuNHI" type="video/mp4">
+  <source src="https://www.youtube.com/watch?v=1oDECQxuNHI" type="video/ogg">
+https://www.youtube.com/watch?v=1oDECQxuNHI
+</video>
+
+URL: https://www.youtube.com/watch?v=1oDECQxuNHI
 
 ### Setup
 
